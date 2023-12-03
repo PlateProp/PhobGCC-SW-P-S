@@ -1984,6 +1984,7 @@ void processButtons(Pins &pin, Buttons &btn, Buttons &hardware, ControlConfig &c
 			settingChangeCount++;
 			adjustWaveshaping(CSTICK, YAXIS, INCREASE, btn, hardware, controls);
 		} else if(hardware.L && hardware.Y && hardware.Z && hardware.Dd) { //Decrease C-stick Y-Axis Waveshaping
+			settingChangeCount++;	
 			adjustWaveshaping(CSTICK, YAXIS, DECREASE, btn, hardware, controls);
 		} else if(hardware.R && hardware.X && hardware.Z && hardware.Du) { //Increase C-stick X Offset
 			settingChangeCount++;
